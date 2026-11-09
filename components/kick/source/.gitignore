@@ -1,0 +1,13 @@
+node_modules/
+dist/
+artifacts/
+TV-INSTALL.md
+.DS_Store
+.claude/
+.claude-flow/
+.codex/
+.code-review-graph/
+.env
+.env.*
+*.key
+*.pem

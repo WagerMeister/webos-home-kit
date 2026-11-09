@@ -1,0 +1,5 @@
+{
+  "id": "com.jakubjirak.service",
+  "description": "Public Kick channel and replay information",
+  "services": [{ "name": "com.jakubjirak.service" }]
+}

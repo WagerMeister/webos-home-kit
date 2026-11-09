@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' file:; style-src 'self' file:; font-src 'self' file:; img-src 'self' file: https://files.kick.com https://images.kick.com; media-src blob: https://stream.kick.com https://*.live-video.net; connect-src 'self' https://stream.kick.com https://*.live-video.net; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Stream for Kick</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="runtime.js"></script>
+  <script src="i18n.js" defer></script>
+  <script src="browse.js" defer></script>
+  <script src="player.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="home">
+    <header><span class="brand">KICK</span><span class="tv-label">TV</span><span id="header-note" class="header-note" data-i18n="header_note">Live streams and replays</span></header>
+    <nav id="browse-tabs" aria-label="Разделы Kick" hidden><button id="browse-popular" type="button"></button><button id="browse-featured" type="button"></button><button id="browse-favorites" type="button"></button><button id="browse-library" type="button"></button></nav>
+    <div id="home-content">
+    <section id="browse-panel" hidden aria-label="Онлайн-каналы"><div id="browse-tools"><p id="browse-note"></p><button id="browse-language" type="button"></button><button id="browse-category" type="button" title="Категории из загруженных подборок"></button><button id="browse-refresh" type="button"></button></div><p id="browse-status" role="status"></p><div id="browse-cards"></div><nav id="browse-pages"><button id="browse-previous" type="button"></button><span id="browse-page"></span><button id="browse-next" type="button"></button></nav></section>
+    <div class="content">
+    <section class="selection" aria-labelledby="heading">
+      <div class="selection-copy"><p id="home-eyebrow" class="eyebrow" data-i18n="home_eyebrow">Your channels. Your screen.</p>
+      <h1 id="heading" data-i18n="home_heading">What will you watch?</h1>
+      <p id="home-intro" data-i18n="home_intro">Enter a channel or return to one of your recent ones.</p>
+      </div><form id="channel-form" novalidate>
+        <label id="channel-label" for="channel" data-i18n="channel_label">Kick channel</label>
+        <div class="channel-row"><input id="channel" type="text" maxlength="100" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Channel name or kick.com/… link" data-i18n-attr="placeholder:channel_placeholder" aria-describedby="error"><button id="favorite-channel" class="favorite-heart" type="button"></button></div>
+        <p id="error" role="alert"></p>
+        <div class="home-actions">
+          <button id="play" type="submit" class="primary"><span id="play-label" data-i18n="play_live">Play live</span> <span aria-hidden="true">▶</span></button>
+          <button id="recordings" type="button" data-i18n="recordings">Replays</button>
+          <button id="find-saved" type="button" data-i18n="find_saved">Find saved channels</button>
+          <p id="favorite-feedback" role="status" class="favorite-feedback"></p>
+        </div>
+      </form>
+    </section>
+    </div>
+    <div class="home-shelves">
+    <section id="recent" aria-labelledby="recent-heading" hidden>
+      <h2 id="recent-heading" data-i18n="recent_heading">Recently opened</h2>
+      <div id="recent-channels"></div>
+      <nav id="recent-pages" aria-label="Recent channel pages" data-i18n-attr="aria-label:recent_pages_label" hidden>
+        <button id="recent-previous" type="button" aria-label="Previous channels" data-i18n-attr="aria-label:recent_previous">←</button>
+        <span id="recent-page-number"></span>
+        <button id="recent-next" type="button" aria-label="More channels" data-i18n-attr="aria-label:recent_next">→</button>
+      </nav>
+    </section>
+    <section id="favorites-section" aria-labelledby="favorites-heading" hidden>
+      <h2 id="favorites-heading" data-i18n="favorites_heading">Favorite channels</h2><div id="favorite-list"></div>
+      <nav id="favorite-pages" aria-label="Favorite channel pages" data-i18n-attr="aria-label:favorite_pages_label" hidden><button id="favorite-previous" type="button" aria-label="← Previous" title="← Previous" data-i18n-attr="aria-label:page_previous;title:page_previous">←</button><span id="favorite-number"></span><button id="favorite-next" type="button" aria-label="Next →" title="Next →" data-i18n-attr="aria-label:page_next;title:page_next">→</button></nav>
+    </section>
+    <section id="continue-section" aria-labelledby="continue-heading" hidden>
+      <h2 id="continue-heading" data-i18n="continue_heading">Continue watching</h2>
+      <div id="continue-list"></div>
+      <nav id="continue-pages" hidden><button id="continue-previous" type="button" aria-label="← Previous" title="← Previous" data-i18n-attr="aria-label:page_previous;title:page_previous">←</button><span id="continue-number"></span><button id="continue-next" type="button" aria-label="Next →" title="Next →" data-i18n-attr="aria-label:page_next;title:page_next">→</button></nav>
+    </section>
+    </div>
+    </div>
+    <footer><span id="footer-hints" data-i18n="footer_hints">↑ ↓ Select &nbsp; OK Confirm &nbsp; Back Return</span><div id="footer-actions"><button id="about-button" type="button" data-i18n="about_title">About and updates</button><button id="accessibility-button" type="button" data-i18n="accessibility_title">Accessibility</button></div><small><span id="footer-note" data-i18n="footer_note">Unofficial Kick player · No chat</span> · <span id="app-version">v0.9.2</span></small></footer>
+  </main>
+  <section id="about" aria-labelledby="about-heading" hidden><h1 id="about-heading" data-i18n="about_title">About and updates</h1>
+    <p id="installed-version"></p><p id="latest-version"></p><p id="update-status" role="status"></p><p id="update-cache-note"></p><pre id="release-notes"></pre><p id="release-url"></p>
+    <p id="install-guide" data-i18n="install_guide">Install the official IPK with webOS Dev Manager or your existing Homebrew setup. In-app installation is unavailable. Keep the same app ID to retain local history.</p>
+    <p id="checksum-guide" data-i18n="checksum_guide">Verify the IPK against SHA256SUMS. Checksums provide integrity, not a publisher signature. Keep the previous IPK for rollback.</p>
+    <button id="check-updates" type="button" data-i18n="check_updates">Check for updates</button><button id="about-back" type="button" data-i18n="back_home">Back to home</button>
+  </section>
+  <section id="catalog" aria-labelledby="catalog-heading" hidden>
+    <div class="catalog-header">
+      <div class="catalog-description">
+        <p id="catalog-eyebrow" class="eyebrow" data-i18n="channel_label">Kick channel</p>
+        <div class="catalog-title-row"><h1 id="catalog-heading"></h1><button id="catalog-favorite" class="favorite-heart" type="button"></button></div>
+        <p id="channel-status" role="status"></p>
+        <p id="catalog-favorite-feedback" role="status" class="favorite-feedback"></p>
+      </div>
+      <div class="catalog-actions">
+        <button id="catalog-search" type="button" data-i18n="search_replays">Search and filter replays</button>
+        <button id="catalog-back" type="button" data-i18n="change_channel">Change channel</button>
+        <button id="live" type="button" class="primary" hidden><span class="live-dot" aria-hidden="true"></span><span id="live-label" data-i18n="play_live">Play live</span></button>
+      </div>
+    </div>
+    <h2 id="videos-heading" data-i18n="videos_heading">Stream replays</h2>
+    <p id="search-summary" role="status"></p>
+    <p id="videos-status" role="status"></p>
+    <button id="catalog-retry" type="button" data-i18n="retry" hidden>Try again</button>
+    <div id="videos"></div>
+    <nav id="pages" aria-label="Replay pages" data-i18n-attr="aria-label:videos_pages_label" hidden>
+      <button id="previous-page" type="button" data-i18n="page_previous">← Previous</button>
+      <span id="page-number"></span>
+      <button id="next-page" type="button" data-i18n="page_next">Next →</button>
+    </nav>
+  </section>
+  <section id="watch" aria-label="Player" data-i18n-attr="aria-label:player_label" tabindex="-1" hidden>
+    <div id="video-host"></div>
+    <p id="playback-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <div id="playback-controls">
+      <p id="video-title"></p>
+      <p id="quality" data-i18n="quality_default">Highest available quality</p>
+      <p id="quality-selection"></p><p id="quality-actual"></p>
+      <div id="timeline">
+        <label id="seek-label" for="seek" data-i18n="seek_label">Replay position</label>
+        <div class="seek-row">
+          <span id="elapsed">0:00</span>
+          <div class="seek-track">
+            <progress id="seek-progress" max="1" value="0" aria-hidden="true"></progress>
+            <input id="seek" type="range" min="0" max="0" value="0" step="1" aria-label="Replay position" data-i18n-attr="aria-label:seek_label" disabled>
+          </div>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <button id="jump-time" type="button" data-i18n="jump_title">Go to time</button>
+      <button id="toggle" type="button" data-i18n="pause">Pause</button>
+      <button id="reconnect" type="button" data-i18n="reconnect">Reconnect</button>
+      <button id="quality-button" type="button" data-i18n="quality_title">Playback quality</button>
+      <button id="speed-button" type="button">Скорость: 1×</button>
+      <button id="hide-controls" type="button">Скрыть меню</button>
+      <button id="watch-recordings" type="button" data-i18n="channel_recordings">Channel replays</button>
+    </div>
+    <button id="back" type="button" data-i18n="change_channel">Change channel</button>
+  </section>
+  <section id="accessibility-dialog" class="modal" role="dialog" aria-modal="true" aria-labelledby="accessibility-heading" hidden><div class="modal-card">
+    <h2 id="accessibility-heading" data-i18n="accessibility_title">Accessibility</h2><p id="accessibility-note" data-i18n="accessibility_note">These settings affect this app. TV Voice Guide support depends on the device and must be checked on the TV.</p>
+    <button id="text-size" type="button"></button><button id="high-contrast" type="button"></button><button id="accessibility-reset" type="button" data-i18n="reset">Reset</button><button id="accessibility-close" type="button" data-i18n="done">Done</button>
+  </div></section>
+  <section id="jump-dialog" class="modal" role="dialog" aria-modal="true" aria-labelledby="jump-heading" hidden><div class="modal-card">
+    <h2 id="jump-heading" data-i18n="jump_title">Go to time</h2><div class="jump-fields">
+    <label id="jump-hours-label" for="jump-hours" data-i18n="hours">Hours</label><input id="jump-hours" type="tel" maxlength="3" autocomplete="off">
+    <label id="jump-minutes-label" for="jump-minutes" data-i18n="minutes">Minutes</label><input id="jump-minutes" type="tel" maxlength="2" autocomplete="off">
+    <label id="jump-seconds-label" for="jump-seconds" data-i18n="seconds">Seconds</label><input id="jump-seconds" type="tel" maxlength="2" autocomplete="off"></div>
+    <p id="jump-preview" role="status"></p><p id="jump-error" role="alert"></p><button id="jump-back" type="button" data-i18n="jump_back">−10 minutes</button><button id="jump-forward" type="button" data-i18n="jump_forward">+10 minutes</button><button id="jump-confirm" type="button" data-i18n="confirm">Confirm</button><button id="jump-cancel" type="button" data-i18n="cancel">Cancel</button>
+  </div></section>
+  <section id="saved-search" class="modal" role="dialog" aria-modal="true" aria-labelledby="saved-heading" hidden><div class="modal-card">
+    <h2 id="saved-heading" data-i18n="find_saved">Find saved channels</h2><label id="saved-label" for="saved-query" data-i18n="search_query">Search text</label><input id="saved-query" type="text" maxlength="200" autocomplete="off"><button id="saved-clear" type="button" data-i18n="clear">Clear</button>
+    <p id="saved-count" role="status"></p><div id="saved-results"></div><button id="saved-previous" type="button" data-i18n="page_previous">← Previous</button><span id="saved-number"></span><button id="saved-next" type="button" data-i18n="page_next">Next →</button><button id="saved-cancel" type="button" data-i18n="cancel">Cancel</button>
+  </div></section>
+  <section id="replay-tools" class="modal" role="dialog" aria-modal="true" aria-labelledby="replay-tools-heading" hidden><div class="modal-card">
+    <h2 id="replay-tools-heading" data-i18n="search_replays">Search and filter replays</h2><p id="search-scope" data-i18n="search_scope">Search covers only the loaded catalog (up to 30 public replays).</p><label id="replay-query-label" for="replay-query" data-i18n="search_query">Search text</label><input id="replay-query" type="text" maxlength="200" autocomplete="off">
+    <p id="replay-result-count" role="status"></p><button id="replay-filter" type="button"></button><button id="replay-sort" type="button"></button><button id="replay-reset" type="button" data-i18n="reset">Reset</button><button id="replay-apply" type="button" data-i18n="apply">Apply</button><button id="replay-cancel" type="button" data-i18n="cancel">Cancel</button>
+  </div></section>
+  <section id="quality-choice" class="modal" role="dialog" aria-modal="true" aria-labelledby="quality-heading" hidden><div class="modal-card"><h2 id="quality-heading" data-i18n="quality_title">Playback quality</h2><div id="quality-options"></div><button id="quality-cancel" type="button" data-i18n="cancel">Cancel</button></div></section>
+  <section id="favorite-move" class="modal" role="dialog" aria-modal="true" aria-labelledby="favorite-move-heading" hidden><div class="modal-card">
+    <h2 id="favorite-move-heading" data-i18n="favorite_move_title">Reorder favorite channels</h2><p id="favorite-move-info"></p>
+    <button id="favorite-move-up" type="button" data-i18n="move_up">Move up</button><button id="favorite-move-down" type="button" data-i18n="move_down">Move down</button>
+    <button id="favorite-move-save" type="button" data-i18n="save">Save</button><button id="favorite-move-cancel" type="button" data-i18n="cancel">Cancel</button>
+  </div></section>
+  <section id="resume-choice" class="modal" role="dialog" aria-modal="true" aria-labelledby="resume-heading" hidden>
+    <div class="modal-card"><h2 id="resume-heading" data-i18n="resume_title">Continue this replay?</h2><p id="resume-info"></p>
+      <button id="resume-continue" type="button" class="primary"></button>
+      <button id="resume-start" type="button" data-i18n="start_over">Start over</button>
+      <button id="resume-cancel" type="button" data-i18n="cancel">Cancel</button>
+    </div>
+  </section>
+<section id="speed-choice" class="modal" role="dialog" aria-modal="true" aria-labelledby="speed-heading" hidden><div class="modal-card"><h2 id="speed-heading">Скорость записи</h2><p id="speed-note"></p><div id="speed-options"></div><button id="speed-cancel" type="button">Отмена</button></div></section>
+</body>
+</html>

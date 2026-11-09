@@ -1,0 +1,157 @@
+{
+  "path": {
+    "cache": {
+      "webos": "/tmp/kick-player-native-profile",
+      "ubuntu": ".config/chromium79"
+    }
+  },
+  "env": [
+    {
+      "name": "CHROMIUM_BROWSER",
+      "value": "yes"
+    },
+    {
+      "name": "BROWSER_NAME",
+      "value": "Chromium79"
+    },
+    {
+      "name": "TMPDIR",
+      "value": "/tmp"
+    },
+    {
+      "name": "ALLOW_DOWNLOADS",
+      "value": "0"
+    },
+    {
+      "name": "CROW_NO_ASSERT",
+      "value": "1"
+    },
+    {
+      "name": "LOG_TO",
+      "value": "/dev/null"
+    },
+    {
+      "name": "CDM_LIB_PATH",
+      "value": "/usr/lib"
+    },
+    {
+      "name": "WEBOS_CARET_WIDTH",
+      "value": "3"
+    },
+    {
+      "name": "EGL_PLATFORM",
+      "value": "wayland"
+    },
+    {
+      "name": "XDG_RUNTIME_DIR",
+      "value": "/tmp/xdg"
+    }
+  ],
+  "env_extra": [
+    {
+      "name": "FONTCONFIG_PATH",
+      "format": "%s/etc/fonts",
+      "value": "path_app"
+    },
+    {
+      "name": "FONTCONFIG_FILE",
+      "format": "%s/etc/fonts/fonts.conf",
+      "value": "path_app"
+    }
+  ],
+  "switch": [
+    "crow-browser",
+    "enable-neva-ime",
+    "always-authorize-plugins",
+    "disable-accelerated-video-decode",
+    "disable-component-cloud-policy",
+    "disable-component-update",
+    "disable-gpu-watchdog",
+    "disable-in-process-stack-traces",
+    "disable-infobars",
+    "disable-translate",
+    "disable-gpu-shader-disk-cache",
+    "enable-aggressive-foreground-gc",
+    "enable-file-cookies",
+    "gpu-no-context-lost",
+    "ignore-gpu-blacklist",
+    "in-process-gpu",
+    "noerrdialogs",
+    "no-sandbox",
+    "safebrowsing-disable-download-protection",
+    "safebrowsing-disable-extension-blacklist",
+    "set-maximized",
+    "disable-site-isolation-trials",
+    "enable-accelerated-compositing",
+    "enable-smooth-scrolling",
+    "disable-low-res-tiling",
+    "enable-threaded-compositing",
+    "no-zygote"
+  ],
+  "switch_value": [
+    {
+      "name": "cipher-suite-blacklist",
+      "value": "0xC007,0xC011,0x0004,0x0005"
+    },
+    {
+      "name": "ozone-platform",
+      "value": "wayland"
+    },
+    {
+      "name": "prerender",
+      "value": "enabled"
+    },
+    {
+      "name": "skia-image-cache-size-mb=",
+      "value": "45"
+    },
+    {
+      "name": "ssl-version-min",
+      "value": "tls1"
+    },
+    {
+      "name": "autoplay-policy",
+      "value": "no-user-gesture-required"
+    },
+    {
+      "name": "max-activated-media-players",
+      "value": "1"
+    },
+    {
+      "name": "disable-features",
+      "value": "SecondaryUiMd"
+    },
+    {
+      "name": "enable-blink-features",
+      "value": "MediaSourceIsSupportedExtension,PreloadDefaultIsAuto,AudioVideoTracks,DisableValidPlaybackRateCheck"
+    },
+    {
+      "name": "js-flags",
+      "value": "--heap_growing_percent=1 --configure_heap_details --minimum_allocation_limit_growing_step_size=2 --high_fragmentation_slack=0 --external_allocation_hard_limit=96 --external_allocation_soft_limit=30 --harmony-optional-chaining --harmony-nullish"
+    },
+    {
+      "name": "user-agent",
+      "value": "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 SmartTV/10.0 Colt/2.0"
+    },
+    {
+      "name": "media-api-trick-mode",
+      "value": "client"
+    },
+    {
+      "name": "user-data-dir",
+      "value": "/tmp/kick-player-native-profile"
+    }
+  ],
+  "switch_format": [
+    {
+      "name": "dynamic-resource-refetch",
+      "format": "file://%s/share/b8_1zx.png",
+      "value": "path_app"
+    },
+    {
+      "name": "config_user_data",
+      "format": "%s",
+      "value": "path_cache"
+    }
+  ]
+}

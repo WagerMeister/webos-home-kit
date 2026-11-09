@@ -1,0 +1,21 @@
+.dashboard-dashboard{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:2;color:#f2f7ff;font-family:Outfit,Arial,sans-serif;display:none}
+.dashboard-forecast{position:absolute;left:8%;top:39%;width:56%;max-width:1060px}
+.dashboard-kicker{font-size:17px;letter-spacing:3px;font-weight:500;color:rgba(233,246,255,.76);margin:0 0 14px;text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.dashboard-cards{display:flex;flex-direction:row;justify-content:space-between}
+.dashboard-card{width:31.8%;box-sizing:border-box;padding:19px 21px 17px;border:1px solid rgba(182,220,244,.19);border-radius:18px;background:rgba(6,19,42,.85);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.dashboard-card-day{font-size:20px;font-weight:500;color:#d6e7f6;letter-spacing:.3px}
+.dashboard-card-main{display:flex;align-items:center;margin:12px 0 11px}
+.dashboard-card-icon{width:39px;height:39px;flex:0 0 auto;margin-right:12px;color:#8fe1ec}
+.dashboard-card-temp{font-size:40px;font-weight:400;letter-spacing:-1px;line-height:1}
+.dashboard-card-time{font-size:14px;color:#b4c5d8;margin-left:11px;line-height:1.5}
+.dashboard-card-info{font-size:17px;line-height:1.65;color:#d6e6f5;white-space:nowrap}
+.dashboard-attribution{font-size:13px;color:rgba(236,245,255,.77);margin-top:12px;text-shadow:0 1px 4px #000}
+.dashboard-calendar{position:absolute;top:10%;right:8%;width:330px;box-sizing:border-box;border:1px solid rgba(182,220,244,.19);border-radius:20px;padding:22px 22px 20px;background:rgba(6,19,42,.85);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.dashboard-calendar-title{font-size:24px;font-weight:500;margin:0 0 16px;letter-spacing:.3px}
+.dashboard-calendar table{width:100%;border-collapse:collapse;table-layout:fixed;text-align:center}
+.dashboard-calendar th{font-size:13px;letter-spacing:1px;color:#a9c1d6;font-weight:400;padding:0 0 11px}
+.dashboard-calendar td{height:37px;font-size:18px;line-height:37px;color:#e5effa;padding:0}
+.dashboard-calendar td span{display:inline-block;width:34px;height:34px;line-height:34px;border-radius:12px}
+.dashboard-calendar .weekend{color:#9fb8cf}
+.dashboard-calendar .today span{color:#052539;background:#9de7e8;font-weight:600;box-shadow:0 0 0 3px rgba(157,231,232,.09)}
+@media(max-width:1400px){.dashboard-calendar{width:250px;padding:17px;top:8%}.dashboard-calendar-title{font-size:19px}.dashboard-calendar td{height:28px;font-size:14px;line-height:28px}.dashboard-calendar td span{width:27px;height:27px;line-height:27px}.dashboard-forecast{top:40%;width:58%}.dashboard-card{padding:12px;border-radius:13px}.dashboard-card-day{font-size:15px}.dashboard-card-temp{font-size:29px}.dashboard-card-icon{width:29px;height:29px;margin-right:7px}.dashboard-card-info{font-size:13px}.dashboard-card-time{font-size:11px;margin-left:6px}.dashboard-kicker{font-size:13px;margin-bottom:10px}.dashboard-attribution{font-size:10px}}

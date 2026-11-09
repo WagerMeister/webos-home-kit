@@ -1,0 +1,3 @@
+#!/bin/sh
+mkdir -p /var/lib/webosbrew/sshd
+exec /media/developer/apps/usr/palm/services/org.webosbrew.hbchannel.service/bin/dropbear -R -s -P /var/run/webosbrew-keyonly-sshd.pid

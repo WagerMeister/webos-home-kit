@@ -1,0 +1,4 @@
+#!/bin/sh
+# Connection controller only; never block root startup, tuner, Home or the audio guards.
+LD_PRELOAD= /usr/bin/setsid /usr/bin/node /var/lib/webosbrew/tv-vpn/manager.js </dev/null >/dev/null 2>&1 &
+exit 0

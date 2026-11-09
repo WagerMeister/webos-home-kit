@@ -1,0 +1,22 @@
+#!/bin/sh
+# Isolate the inspector when kernel packet filtering is available.
+# Do not flush rules owned by the operating system or a connection provider.
+umask 077
+ipv4=false
+ipv6=false
+for command in iptables ip6tables; do
+    if command -v "$command" >/dev/null 2>&1 && "$command" -S INPUT >/dev/null 2>&1; then
+        if "$command" -C INPUT ! -i lo -p tcp --dport 9998 -j DROP 2>/dev/null ||
+            "$command" -I INPUT 1 ! -i lo -p tcp --dport 9998 -j DROP; then
+            case "$command" in iptables) ipv4=true ;; ip6tables) ipv6=true ;; esac
+        fi
+    fi
+done
+directory=/var/lib/webosbrew/home-kit
+if [ -d "$directory" ] && [ ! -L "$directory" ]; then
+    printf '{"version":1,"ipv4Configured":%s,"ipv6Configured":%s}\n' "$ipv4" "$ipv6" > "$directory/inspector-isolation.json.new"
+    mv -f "$directory/inspector-isolation.json.new" "$directory/inspector-isolation.json"
+fi
+[ "$ipv4" = true ] && [ "$ipv6" = true ] || echo 'Inspector isolation unavailable; verify access independently' >&2
+# Access hardening must not trigger the root startup crash guard.
+exit 0

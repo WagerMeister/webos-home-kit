@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "provider": "tailscale",
+  "enabled": false,
+  "providerConfig": {
+    "hostname": "lg-webos-tv",
+    "exitNodeIP": "100.64.0.10",
+    "exitNodeName": "example-exit-node",
+    "acceptDNS": false,
+    "dnsMode": "connman-system"
+  }
+}

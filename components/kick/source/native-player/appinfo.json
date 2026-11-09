@@ -1,0 +1,17 @@
+{
+  "id": "com.jakubjirak.player",
+  "version": "0.2.0",
+  "vendor": "Local Kick Player",
+  "type": "native",
+  "main": "chrome",
+  "title": "Kick — ускоренный плеер",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "visible": false,
+  "noSplashOnLaunch": true,
+  "nativeLifeCycleInterfaceVersion": 2,
+  "handleScreenRemoteKey": true,
+  "requiredMemory": 128,
+  "resolution": "1920x1080",
+  "privilegedJail": true
+}

@@ -1,0 +1,7 @@
+{
+  "hearth": "https://github.com/rudra-avatar/Hearth/releases/tag/v2.1.3",
+  "homebrewChannel": "https://github.com/webosbrew/webos-homebrew-channel/releases/tag/v0.7.3",
+  "kickUpstream": "https://github.com/JirakJ/kick-web-os-app",
+  "kickBaseCommit": "677abfe26ff1387631c0f2574119f0da5c3031b8",
+  "tailscale": "https://pkgs.tailscale.com/stable/tailscale_1.104.5_arm.tgz"
+}

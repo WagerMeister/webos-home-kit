@@ -1,0 +1,6 @@
+#!/bin/sh
+# Separate best-effort observer. It never blocks or controls the TV startup.
+if [ -f /var/lib/webosbrew/vk-speed/runtime/capture.py ]; then
+  (LD_PRELOAD='' /usr/bin/setsid /usr/bin/python /var/lib/webosbrew/vk-speed/runtime/capture.py </dev/null >/dev/null 2>&1 &)
+fi
+exit 0

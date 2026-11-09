@@ -1,0 +1,17 @@
+{
+  "notDistributed": [
+    {
+      "component": "vk-speed",
+      "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed.player/chrome",
+      "requiredFile": "components/vk-speed/native/chrome",
+      "reason": "LG-owned native executable; obtain only from your own compatible TV"
+    },
+    {
+      "component": "kick",
+      "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak.player/chrome",
+      "requiredFile": "components/kick/source/native-player/chrome",
+      "reason": "LG-owned executable; obtain from own compatible TV only"
+    }
+  ],
+  "source": "Installed browser engine on a compatible webOS TV; see docs/INSTALL.md"
+}

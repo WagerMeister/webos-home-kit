@@ -1,0 +1,14 @@
+{
+  "id": "com.jakubjirak",
+  "version": "0.9.2",
+  "vendor": "Jiri Jirak",
+  "type": "web",
+  "main": "index.html",
+  "title": "Stream for Kick",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "iconColor": "#0b0e0f",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true,
+  "appDescription": "Unofficial Kick player · No chat"
+}

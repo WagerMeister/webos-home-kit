@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1920, initial-scale=1.0" />
+  <title>Home</title>
+  <style>html, body { margin: 0; background: #000; }</style>
+  <link rel="stylesheet" href="./dashboard/dashboard.css" />
+  <link rel="stylesheet" href="./custom-connection/connection.css" />
+</head>
+<body>
+  <div id="root"></div>
+  <script src="./defaults.js"></script>
+  <script src="./hearth-audio-handoff.js"></script>
+  <script src="./native-entrypoints.js"></script>
+  <script src="./row-model.js"></script>
+  <script src="./row-controller.js"></script>
+  <script src="./dashboard/suncalc.js"></script>
+  <script src="./dashboard/scenery-model.js"></script>
+  <script src="./dashboard/forecast-model.js"></script>
+  <script src="./hearth-weather-provider.js"></script>
+  <script src="./dashboard/dashboard.js" defer></script>
+  <script>
+  document.write('<script src="' + (window.CSS && CSS.supports && CSS.supports('--a', '0') ? './assets/app.js' : './assets/app.legacy.js') + '"><\/script>');
+  </script>
+  <script src="./custom-connection/qrcode.js" defer></script>
+  <script src="./custom-connection/connection.js" defer></script>
+</body>
+</html>

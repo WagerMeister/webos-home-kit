@@ -1,0 +1,66 @@
+[
+  {
+    "package": "braces",
+    "upstream_version": "3.0.3",
+    "local_version": "3.0.4-security.2",
+    "registry_url": "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz",
+    "registry_integrity": "sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==",
+    "patch_commit": "28d440b5dd449dbf1fe6f3506cf94ecca4d02660",
+    "patch_url": "https://github.com/micromatch/braces/pull/72",
+    "patch_status": "unmerged local backport; not an upstream release",
+    "license": "MIT",
+    "files": {
+      "lib/compile.js": {
+        "url": "https://raw.githubusercontent.com/micromatch/braces/28d440b5dd449dbf1fe6f3506cf94ecca4d02660/lib/compile.js",
+        "sha256": "b651f7715e6db8942ce61d3394357b4d81c8ece88240aa31a458ea1165edd195"
+      },
+      "lib/constants.js": {
+        "url": "https://raw.githubusercontent.com/micromatch/braces/28d440b5dd449dbf1fe6f3506cf94ecca4d02660/lib/constants.js",
+        "sha256": "f9fb688959232eee3e6ad7906a5b0e3234815db49ee857ef86983d65b917dc7c"
+      },
+      "lib/expand.js": {
+        "url": "https://raw.githubusercontent.com/micromatch/braces/28d440b5dd449dbf1fe6f3506cf94ecca4d02660/lib/expand.js",
+        "sha256": "7ea3e14c2b2b256ef244fd3d83b8fcaa20aa2232b4e6d768c3bb6ab567f66cf5"
+      },
+      "lib/parse.js": {
+        "url": "https://raw.githubusercontent.com/micromatch/braces/28d440b5dd449dbf1fe6f3506cf94ecca4d02660/lib/parse.js",
+        "sha256": "b1bf766fba6a62035f78ecbda8a5fd94e921aa1c1ec0cdf3f467e9c836abed55"
+      },
+      "lib/stringify.js": {
+        "url": "https://raw.githubusercontent.com/micromatch/braces/28d440b5dd449dbf1fe6f3506cf94ecca4d02660/lib/stringify.js",
+        "sha256": "49dc2d8bafa74f34715a18a845bcb82ce66caaf3bab4cf117998e06b1f9a50a9"
+      },
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/micromatch/braces/28d440b5dd449dbf1fe6f3506cf94ecca4d02660/README.md",
+        "sha256": "e2fe5795a892346314a01aabdde1b1e6d4cf778531b9cec820cd5ac115a88902"
+      }
+    },
+    "artifact_sha256": "0ea4a96bde6b08cff47815073a66d30ba68e972bc9b9e321ecf477da0aa1029a"
+  },
+  {
+    "package": "sprintf-js",
+    "upstream_version": "1.1.3",
+    "local_version": "1.1.4-security.1",
+    "registry_url": "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.3.tgz",
+    "registry_integrity": "sha512-Oo+0REFV59/rz3gfJNKQiBlwfHaSESl1pcGyABQsnnIfWOFt6JNj5gCog2U6MLZ//IGYD+nA8nI+mTShREReaA==",
+    "patch_commit": "438195c605fde3e4ff0bb155d2418f7d0171490a",
+    "patch_url": "https://github.com/alexei/sprintf.js/pull/239",
+    "patch_status": "unmerged local backport; not an upstream release",
+    "license": "BSD-3-Clause",
+    "files": {
+      "src/sprintf.js": {
+        "url": "https://raw.githubusercontent.com/alexei/sprintf.js/438195c605fde3e4ff0bb155d2418f7d0171490a/src/sprintf.js",
+        "sha256": "6ebf2bda2ae2cd1c8e20cb28ef90a709248878403a719f2df0f24d3c41d8a72f"
+      },
+      "dist/sprintf.min.js": {
+        "url": "https://raw.githubusercontent.com/alexei/sprintf.js/438195c605fde3e4ff0bb155d2418f7d0171490a/dist/sprintf.min.js",
+        "sha256": "db4e127df68983fa5ecea6522a65b1e268bdaf1a66d2e1defdf1376489071452"
+      },
+      "dist/sprintf.min.js.map": {
+        "url": "https://raw.githubusercontent.com/alexei/sprintf.js/438195c605fde3e4ff0bb155d2418f7d0171490a/dist/sprintf.min.js.map",
+        "sha256": "97521efccb26ba7bf448042fd480303835ce749e2075e4e213e9a4e37f0c0cde"
+      }
+    },
+    "artifact_sha256": "326d05867410e59c2b6f75f96a184c9da54ad4e3b1780fd57d0a7fc7e9381a17"
+  }
+]

@@ -1,0 +1,2 @@
+#!/bin/sh
+(LD_PRELOAD="" nohup /usr/bin/node /var/lib/webosbrew/hearth-boot-audio/foreground-window.js --boot >/tmp/hearth-boot-audio.log 2>&1 </dev/null &)

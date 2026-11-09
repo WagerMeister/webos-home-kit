@@ -1,0 +1,17 @@
+{
+  "id": "org.local.vkspeed.player",
+  "version": "0.1.0",
+  "vendor": "Local VK Speed",
+  "type": "native",
+  "main": "chrome",
+  "title": "VK Speed Player",
+  "icon": "icon.png",
+  "largeIcon": "icon.png",
+  "visible": false,
+  "noSplashOnLaunch": true,
+  "nativeLifeCycleInterfaceVersion": 2,
+  "handleScreenRemoteKey": true,
+  "requiredMemory": 128,
+  "resolution": "1920x1080",
+  "privilegedJail": true
+}

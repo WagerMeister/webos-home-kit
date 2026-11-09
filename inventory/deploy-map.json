@@ -1,0 +1,1084 @@
+[
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/native/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed.player/appinfo.json",
+    "mode": "0644",
+    "sha256": "b6c910b8c49c83e5092b7bf145262455a5535c0f333b8bc7443494eb3f4dc438"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/native/icon.png",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed.player/icon.png",
+    "mode": "0644",
+    "sha256": "cfe7baa39cf405a9f6df00507ed69b63354053607343b3cd75245709775a1b21"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/native/libvkobserver.so",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed.player/libvkobserver.so",
+    "mode": "0555",
+    "sha256": "b66f8e64121a8f066486f4a1426557579c73a040a21544629ceb53804c34b032"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/native/share/crow_config.json",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed.player/share/crow_config.json",
+    "mode": "0644",
+    "sha256": "bfb3c91092288a8b7125a1c34ac8b287d55f5a5db100cd40ad43db30031465ca"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/launcher/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed/appinfo.json",
+    "mode": "0644",
+    "sha256": "6703e313126a9d8822a1ca3b0aa20d7023c4d46696ef06d22a28a6ccfca2b8dd"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/launcher/icon.png",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed/icon.png",
+    "mode": "0644",
+    "sha256": "cfe7baa39cf405a9f6df00507ed69b63354053607343b3cd75245709775a1b21"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/launcher/index.html",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed/index.html",
+    "mode": "0644",
+    "sha256": "41f9a29fabad0e752452533e9bf01e006680f4613b6b2047b03de223c5379fe1"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/launcher/launcher.js",
+    "target": "/media/developer/apps/usr/palm/applications/org.local.vkspeed/launcher.js",
+    "mode": "0644",
+    "sha256": "b296cb0512f602174c2899d86e4f9fd4a7b9ff62a12d580b81ccec39c67fc122"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/assets/app.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/assets/app.js",
+    "mode": "0644",
+    "sha256": "af81bcee45034616bcc246c8e7febe2a7f033ea2593dcb6a0108215dd1afb5c6"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/assets/app.legacy.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/assets/app.legacy.js",
+    "mode": "0644",
+    "sha256": "3c00bad7338277bd80b947fca530394f61f87e66504eacd03513b0475e63de61"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/dashboard.css",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/dashboard.css",
+    "mode": "0644",
+    "sha256": "b6ad603de40f91a6b6f4454454427b9ac2fd4d587235d3b5adfd4cbd5ccf67e9"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/dashboard.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/dashboard.js",
+    "mode": "0644",
+    "sha256": "21a45045030d1d15d0ba0b3f93c71ca07419f6a658a054acb22940b68b7cad91"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/forecast-model.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/forecast-model.js",
+    "mode": "0644",
+    "sha256": "87a4ad0c69bf027d198baa5ebb3142a252daa24bc53921dbb207a6234070e71f"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenery-model.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenery-model.js",
+    "mode": "0644",
+    "sha256": "0c92c733a8480922ffa95602179a165020fa0afda58807fb6cbfdae596477b02"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/autumn/dawn.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/autumn/dawn.jpg",
+    "mode": "0644",
+    "sha256": "de5a954c3b4bbe8c67b14f6851fd1b947c408d2c2fc3c62924399731dff92a89"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/autumn/day.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/autumn/day.jpg",
+    "mode": "0644",
+    "sha256": "67a7e2173803f2129ba1eec70af0a71319cafd7870023deeafd2c5e2aff4bcf0"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/autumn/evening.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/autumn/evening.jpg",
+    "mode": "0644",
+    "sha256": "ec13d3b44539804d3ef358a74a4e624750805505e4bdce9625ae1d39a5d282e6"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/autumn/night.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/autumn/night.jpg",
+    "mode": "0644",
+    "sha256": "4376a1ceaf5ad7e366df7372e27752a5dbab745220967333250bbc5ab56418b4"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/spring/dawn.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/spring/dawn.jpg",
+    "mode": "0644",
+    "sha256": "6bf1e8eab6aae4c5d6cdc7430a0e2b626920161dcbac1c008995896e0261dec8"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/spring/day.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/spring/day.jpg",
+    "mode": "0644",
+    "sha256": "0ba54ce88a70f9fe19c96350a9f622785214db1104d0fd9898fb5cfbab0564ea"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/spring/evening.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/spring/evening.jpg",
+    "mode": "0644",
+    "sha256": "4c6416578073d21c18f1f72f30a472a8d8b03c649c42e791871c66ecd34f66cf"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/spring/night.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/spring/night.jpg",
+    "mode": "0644",
+    "sha256": "6444957f11c1290b25f88d48b6c7a647efce998cfebc6b0b5506fbe9af2f7d53"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/summer/dawn.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/summer/dawn.jpg",
+    "mode": "0644",
+    "sha256": "780e7363432c34642737b473475a1dd089aefcc4e747386a12c17372ca95a494"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/summer/day.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/summer/day.jpg",
+    "mode": "0644",
+    "sha256": "9d72007fd29198397f8051beeffeb94169d28fdc8b8f647ca698c444e18c1c6b"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/summer/evening.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/summer/evening.jpg",
+    "mode": "0644",
+    "sha256": "1f7a59ab006380f26ff3a67d1404074b9244a5a4326c8f88252bf2fef0ca034d"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/summer/night.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/summer/night.jpg",
+    "mode": "0644",
+    "sha256": "ec95c81942f0b8d8250af3369836bb2b91af35465e545327e4d898400df78b58"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/winter/dawn.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/winter/dawn.jpg",
+    "mode": "0644",
+    "sha256": "06d59801dda9cc3869a6a53d95cabf1890d563a07dfbcaebaa53f109d41d54c7"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/winter/day.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/winter/day.jpg",
+    "mode": "0644",
+    "sha256": "93a28fb5540aa857b9c0b178ec5c75248c8d56024fdbf8b5e8f768d446f7adfe"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/winter/evening.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/winter/evening.jpg",
+    "mode": "0644",
+    "sha256": "0e1e1791ed0169b29cf217208f586a4937f7e669ceeba3faa15067012f979d18"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/scenes/winter/night.jpg",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/scenes/winter/night.jpg",
+    "mode": "0644",
+    "sha256": "f4ea911db9a4a54cbb2c156898bafc36d43c410430ae685fc52bbaa66ad4e7da"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/suncalc-LICENSE",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/suncalc-LICENSE",
+    "mode": "0644",
+    "sha256": "9010b843aad8e450890fc18dae2dfec00e68c10da775515801c42878afbb0da1"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/dashboard/suncalc.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/dashboard/suncalc.js",
+    "mode": "0644",
+    "sha256": "5bfe4127cb91b7436295135d491e2d8abeccacbc8c4d450fb30771183b1e24d2"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/hearth-ui/qrcode.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-connection/qrcode.js",
+    "mode": "0644",
+    "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/hearth-ui/connection.css",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-connection/connection.css",
+    "mode": "0644",
+    "sha256": "d12dd08479f55963cda993d1d1b5276ff668ffdbf0a573b5dfe12b736db2ed71"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/hearth-ui/connection.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-connection/connection.js",
+    "mode": "0644",
+    "sha256": "c2487c130a6a3c0e804377409d78bb1e00259ef0a9764ee35bd9cf8ba8290385"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/hearth-audio-handoff.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/hearth-audio-handoff.js",
+    "mode": "0644",
+    "sha256": "f80262ff466c1078fdf3bf5b8b9b794568741838a91ff561b04aa19c3441c9a9"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/hearth-weather-provider.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/hearth-weather-provider.js",
+    "mode": "0644",
+    "sha256": "0559ce7a9e9c33879846fb24b048155d7adb054a8fd3765d519316c9da94285a"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/index.html",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/index.html",
+    "mode": "0644",
+    "sha256": "f84c68238a5a28e5a847bb15f943bdde456bfd63cc099656f9c641847459fe71"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/native-entrypoints.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/native-entrypoints.js",
+    "mode": "0644",
+    "sha256": "c7c174f35bf20d6759840809afc81cc0bc3b50f0e333b41b3ebce29b87d7b25d"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/row-controller.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/row-controller.js",
+    "mode": "0644",
+    "sha256": "a9c49dd3ba695d71bce2d6e9d299d50ef27fee82bbefbfac5cecd75adf98aa15"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/row-model.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/row-model.js",
+    "mode": "0644",
+    "sha256": "7d4c961f1e15398e00987b4bf1359738885511f0aff2fa49c14299d5c5ca9d7e"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/service/index.js",
+    "target": "/media/developer/apps/usr/palm/services/org.local.vkspeed.service/index.js",
+    "mode": "0644",
+    "sha256": "ce8ab60b04edb55e14a12178e02e265270dc03fc90870852d2166fc0a3c6cb07"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/service/package.json",
+    "target": "/media/developer/apps/usr/palm/services/org.local.vkspeed.service/package.json",
+    "mode": "0644",
+    "sha256": "9eea76c9f51d2af957bbdf73d53b0b859dd72efaa32dbb268da8e624b187fa2d"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/service/services.json",
+    "target": "/media/developer/apps/usr/palm/services/org.local.vkspeed.service/services.json",
+    "mode": "0644",
+    "sha256": "04c0211d740ab264224cd37f262e7a168473786264161deca9d0132ba5f762c0"
+  },
+  {
+    "component": "system",
+    "file": "components/system/homeapp/guard.sh",
+    "target": "/var/lib/webosbrew/hearth-homeapp/guard.sh",
+    "mode": "0700",
+    "sha256": "20a55afcb4cec24227a6483c87636dfc984770f61dad5a2239924ce3bf36bfcb"
+  },
+  {
+    "component": "system",
+    "file": "components/system/audio/boot-pipeline-cleanup.js",
+    "target": "/var/lib/webosbrew/hearth-boot-audio/boot-pipeline-cleanup.js",
+    "mode": "0600",
+    "sha256": "bdd02742d38f35e4cc9e47fc69d1cad20bbeefba4e5facdcc18fd5d4135e6f08"
+  },
+  {
+    "component": "system",
+    "file": "components/system/audio/foreground-window.js",
+    "target": "/var/lib/webosbrew/hearth-boot-audio/foreground-window.js",
+    "mode": "0600",
+    "sha256": "d4250c2b70a5b87de943a297033f3a895b2ac8d77abb54bc2813022b0011d695"
+  },
+  {
+    "component": "system",
+    "file": "components/system/audio/guard.js",
+    "target": "/var/lib/webosbrew/hearth-boot-audio/guard.js",
+    "mode": "0700",
+    "sha256": "2ca2d45744fd9f327bbf2d7ef239d4ebfac0b4fc9523d40b1754ef2dfa3c3a3a"
+  },
+  {
+    "component": "system",
+    "file": "components/system/hooks/30-sshd-key-only",
+    "target": "/var/lib/webosbrew/init.d/30-sshd-key-only",
+    "mode": "0700",
+    "sha256": "f64226244d895443313d849e8816d5c50429cc372e9b7181e450c6f6f7e5f393"
+  },
+  {
+    "component": "system",
+    "type": "symlink",
+    "target": "/var/lib/webosbrew/init.d/46-launcher-homeapp",
+    "linkTarget": "/var/lib/webosbrew/hearth-homeapp/guard.sh"
+  },
+  {
+    "component": "system",
+    "file": "components/system/hooks/47-hearth-boot-audio",
+    "target": "/var/lib/webosbrew/init.d/47-hearth-boot-audio",
+    "mode": "0700",
+    "sha256": "d4fcd2a4399b51043f2ca33b2d33b648a25330e3bff270832f5f0911601abb24"
+  },
+  {
+    "component": "connection",
+    "type": "symlink",
+    "target": "/var/lib/webosbrew/init.d/48-tv-vpn",
+    "linkTarget": "/var/lib/webosbrew/tv-vpn/48-tv-vpn"
+  },
+  {
+    "component": "vk-speed",
+    "type": "symlink",
+    "target": "/var/lib/webosbrew/init.d/49-vk-speed",
+    "linkTarget": "/var/lib/webosbrew/vk-speed/runtime/49-vk-speed"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/browser-server.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/browser-server.js",
+    "mode": "0644",
+    "sha256": "922f66596cee1f67d7ab98a5c7e62039940f16ac7c6a2e899d3159a1715c7b97"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/browser-session.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/browser-session.js",
+    "mode": "0644",
+    "sha256": "e24a5b71128cf6cd64f1cc88fd0533cb20a38ffb57daf2efbbbb2ef0888ffb7a"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/discovery.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/discovery.js",
+    "mode": "0644",
+    "sha256": "2b3b687123c26681ec34657625c161b64e46f0dbd2d5b268e6f7fc0332e9a068"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/index.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/index.js",
+    "mode": "0644",
+    "sha256": "a124f3342c80ba7908174b52039f7c680defb25f0dd621b9c45fc65139a3d7f1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/native-input.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/native-input.js",
+    "mode": "0644",
+    "sha256": "d173ef0de74b3d180fcf42f763ed4c591fe0162e361a42f2d524bf510c7ac3a5"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/native-mount-cleanup.py",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/native-mount-cleanup.py",
+    "mode": "0644",
+    "sha256": "1ef50da59658eeb5c31249ef738eaa578b026071c27ee26b2aaf11eaf8667190"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/native-prepare.py",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/native-prepare.py",
+    "mode": "0644",
+    "sha256": "14f73e70a67301f0e721a90cc8959c196c88e49ff59f149e62354c806eaa7f42"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/package.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/package.json",
+    "mode": "0644",
+    "sha256": "298760aecb109c45fecee3f33988d718307b990ad39031f1fa0e3f0ef164d07e"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/services.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/services/com.jakubjirak.service/services.json",
+    "mode": "0644",
+    "sha256": "89f3328e042705cf50d3ba7704dd5944cde49b9704f07b40707666b5a56bf349"
+  },
+  {
+    "component": "system",
+    "file": "components/system/startup-trace/grace-poweroff.py",
+    "target": "/var/lib/webosbrew/startup-trace/grace-poweroff.py",
+    "mode": "0700",
+    "sha256": "5421823ea2212868690a36fe8b1036eb90ba71d77c5052ff36b83e0ce612e40e"
+  },
+  {
+    "component": "system",
+    "file": "components/system/startup.sh",
+    "target": "/var/lib/webosbrew/startup.sh",
+    "mode": "0755",
+    "sha256": "9b64004b0377a30b555b48a16c5ef836c99aa3e8254d0148091ab10e8326413a"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/root/48-connection",
+    "target": "/var/lib/webosbrew/tv-vpn/48-tv-vpn",
+    "mode": "0700",
+    "sha256": "e6050037b0ff9155347e35f9de2be9a6ad0927867fa70cc60c8efbe9e90328b1"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/root/control.js",
+    "target": "/var/lib/webosbrew/tv-vpn/control.js",
+    "mode": "0600",
+    "sha256": "064acfcf939a6596ccb2288ae3dd8f70811495d6a06513f18969a21b149d2899"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/root/manager.js",
+    "target": "/var/lib/webosbrew/tv-vpn/manager.js",
+    "mode": "0600",
+    "sha256": "3343ea1d0dc72aad8d262f42488f7b4e9e36d138b2cd539aafd40921d476ed4b"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/root/routing-compat.py",
+    "target": "/var/lib/webosbrew/tv-vpn/routing-compat.py",
+    "mode": "0600",
+    "sha256": "a173e1a31ae6ae2bea3e82f947d9b23924a9736c87d792ad430eac79954d40ed"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/49-vk-speed",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/49-vk-speed",
+    "mode": "0700",
+    "sha256": "2b191c41f9d1bd978108ef5873baf7aebe6086f66b872402b7e0abc45e7df683"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/capture.py",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/capture.py",
+    "mode": "0600",
+    "sha256": "a70f6f8c96c946bca6e93e6ca84b07c13b0a58a07b0d53c515b41b3e1a730b07"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/launch.py",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/launch.py",
+    "mode": "0644",
+    "sha256": "81e3695dbebce7437e7cdbd5f26327df6b82f92db9d76f72289e480e33d1d2c0"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/native-input.js",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/native-input.js",
+    "mode": "0644",
+    "sha256": "b63daab5f42e9a96f7e9d91c0a708d832011c4987711336dcf9092bd81b99064"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/native-mount-cleanup.py",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/native-mount-cleanup.py",
+    "mode": "0644",
+    "sha256": "2dfe21ede6809a08b4caf4a05759fcb380dcd1e24fcc304cc66bf6881e1d77ab"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/native-prepare.py",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/native-prepare.py",
+    "mode": "0644",
+    "sha256": "99d5fe90a229cc5e824e15cb522ff41b3153e38f05ff1b3cba27e23e5438dbda"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/proxy.js",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/proxy.js",
+    "mode": "0600",
+    "sha256": "882ce8410f139099997b4052bfacfeac24f714682983bb83ac1025e6cc10d467"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/server.js",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/server.js",
+    "mode": "0600",
+    "sha256": "64b64a3a8dc4fb6481bd5941dbb898aa4fd627efcd0be0f21a47e59efb31c25a"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/web/index.html",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/web/index.html",
+    "mode": "0600",
+    "sha256": "a05d65020898ac811ec60b42cc862597486780f08084aa2e20d17aa58fec14a0"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/web/player.js",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/web/player.js",
+    "mode": "0600",
+    "sha256": "31dee4bccc212fa2e67e64c92ba4d2db7382e8ef93b897b74c75c348e98ed787"
+  },
+  {
+    "component": "vk-speed",
+    "file": "components/vk-speed/runtime/web/vendor/hls.light.min.js",
+    "target": "/var/lib/webosbrew/vk-speed/runtime/web/vendor/hls.light.min.js",
+    "mode": "0644",
+    "sha256": "482cccb3a224554f64d8c2cf0d335dba4a3819bdb726afbfddfe15de4c277d82"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/icon.png",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/icon.png",
+    "mode": "0644",
+    "sha256": "99670cf22d5145894d7a60636b3142374629ee5f22020631bbae5d62dc22e42f"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/icon.png",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/icon.png",
+    "mode": "0644",
+    "sha256": "99670cf22d5145894d7a60636b3142374629ee5f22020631bbae5d62dc22e42f"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/index.html",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/index.html",
+    "mode": "0644",
+    "sha256": "562441ae338a460fd101bfd098eb03e2e30c6f0e6064245299f93a4485f2d7cb"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/index.html",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/index.html",
+    "mode": "0644",
+    "sha256": "562441ae338a460fd101bfd098eb03e2e30c6f0e6064245299f93a4485f2d7cb"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/runtime.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/runtime.js",
+    "mode": "0644",
+    "sha256": "a3aecf6ef763ad0fc85b313ff0d51bdcc0a2a0999fa055e42fb602d0db155e4d"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/browse.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/browse.js",
+    "mode": "0644",
+    "sha256": "9338ce2b2c39b3a25cda8fa65d5cc770ce98e581210b2b60721da437673969b6"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/style.css",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/style.css",
+    "mode": "0644",
+    "sha256": "5e0a771f2458042779c67bc88cb7694e952519d951fc621ed563d1803720bf9d"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/style.css",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/style.css",
+    "mode": "0644",
+    "sha256": "5e0a771f2458042779c67bc88cb7694e952519d951fc621ed563d1803720bf9d"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/largeIcon.png",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/largeIcon.png",
+    "mode": "0644",
+    "sha256": "80428c0a08d72ce4eb605a46cc72394cdfa90cc31d8b70428043635aa505eb31"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/largeIcon.png",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/largeIcon.png",
+    "mode": "0644",
+    "sha256": "80428c0a08d72ce4eb605a46cc72394cdfa90cc31d8b70428043635aa505eb31"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/player.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/player.js",
+    "mode": "0644",
+    "sha256": "d5eea99f70c64a34ccd961a8519a496c0cd5db1c13e017d2e386bbf7d8026dd8"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/i18n.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/i18n.js",
+    "mode": "0644",
+    "sha256": "3fd397f8a56d95801ac5b7fcce5323faf1c956429cad3eabdd754db0ff5c399c"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/app.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/app.js",
+    "mode": "0644",
+    "sha256": "efe2122e6eaf9b16f2de90b5627c4c1dce4284ea3c0ba4c0d6a3e5547757226c"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/appinfo.json",
+    "mode": "0644",
+    "sha256": "105dafd2951a4654011f7a10817ccf398bd45679c3adbf4045857728a0fb9702"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/appinfo.json",
+    "mode": "0644",
+    "sha256": "105dafd2951a4654011f7a10817ccf398bd45679c3adbf4045857728a0fb9702"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/fonts/README.md",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/fonts/README.md",
+    "mode": "0644",
+    "sha256": "302c42644e8cd19fd0bd6d04a0d0dcf54da8d9fe6922087377d9337ddee6be23"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/fonts/README.md",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/fonts/README.md",
+    "mode": "0644",
+    "sha256": "302c42644e8cd19fd0bd6d04a0d0dcf54da8d9fe6922087377d9337ddee6be23"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/fonts/OFL.txt",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/fonts/OFL.txt",
+    "mode": "0644",
+    "sha256": "79d348cb5161481f603dcda564fb129a9b2c11d7012dcad820af045fed75c020"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/fonts/OFL.txt",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/fonts/OFL.txt",
+    "mode": "0644",
+    "sha256": "79d348cb5161481f603dcda564fb129a9b2c11d7012dcad820af045fed75c020"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/fonts/NotoEmoji-Regular.woff2",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/fonts/NotoEmoji-Regular.woff2",
+    "mode": "0644",
+    "sha256": "72149441d478acb7e5e4fe27adbabde4330f86affed8b3301e4bc4c4d92d53c1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/fonts/NotoEmoji-Regular.woff2",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/fonts/NotoEmoji-Regular.woff2",
+    "mode": "0644",
+    "sha256": "72149441d478acb7e5e4fe27adbabde4330f86affed8b3301e4bc4c4d92d53c1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/vendor/HLS-LICENSE",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/vendor/HLS-LICENSE",
+    "mode": "0644",
+    "sha256": "ca8773cf798c7ed997d4dd7c8e23c348699f8d5b7462636694cc14de6cda12db"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/vendor/HLS-LICENSE",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/vendor/HLS-LICENSE",
+    "mode": "0644",
+    "sha256": "ca8773cf798c7ed997d4dd7c8e23c348699f8d5b7462636694cc14de6cda12db"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/vendor/hls.light.min.js",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/vendor/hls.light.min.js",
+    "mode": "0644",
+    "sha256": "482cccb3a224554f64d8c2cf0d335dba4a3819bdb726afbfddfe15de4c277d82"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/sk/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/sk/appinfo.json",
+    "mode": "0644",
+    "sha256": "d8b29fb7cfb93a031da9538175e05f8bbc732714ec1d3d5b6a9f2bebeeaa73d9"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/sk/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/sk/appinfo.json",
+    "mode": "0644",
+    "sha256": "d8b29fb7cfb93a031da9538175e05f8bbc732714ec1d3d5b6a9f2bebeeaa73d9"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/pl/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/pl/appinfo.json",
+    "mode": "0644",
+    "sha256": "fe4770b1bf0d3b767c9a2aa87143bec3fe13933b14693c8fe9f3f5a9d9cab3e1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/pl/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/pl/appinfo.json",
+    "mode": "0644",
+    "sha256": "fe4770b1bf0d3b767c9a2aa87143bec3fe13933b14693c8fe9f3f5a9d9cab3e1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/it/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/it/appinfo.json",
+    "mode": "0644",
+    "sha256": "dad7ccd57c64d840edc90e75dba519ce8eed66282f6971373819f45b397938e0"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/it/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/it/appinfo.json",
+    "mode": "0644",
+    "sha256": "dad7ccd57c64d840edc90e75dba519ce8eed66282f6971373819f45b397938e0"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/cs/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/cs/appinfo.json",
+    "mode": "0644",
+    "sha256": "19336ff05c3bd9c3173e2725dd66d5344c26fbd501e9241d9bc8b32648c1729b"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/cs/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/cs/appinfo.json",
+    "mode": "0644",
+    "sha256": "19336ff05c3bd9c3173e2725dd66d5344c26fbd501e9241d9bc8b32648c1729b"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/ru/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/ru/appinfo.json",
+    "mode": "0644",
+    "sha256": "3855a3561fec005ee4e86d20a520a09c64f02bc32bad538f1c4b50d6ac0d078c"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/ru/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/ru/appinfo.json",
+    "mode": "0644",
+    "sha256": "3855a3561fec005ee4e86d20a520a09c64f02bc32bad538f1c4b50d6ac0d078c"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/pt/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/pt/appinfo.json",
+    "mode": "0644",
+    "sha256": "a78b9aebeade3caec8cf778187d8da49c71c3a445cfff4d33fc4dc3619917a60"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/pt/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/pt/appinfo.json",
+    "mode": "0644",
+    "sha256": "a78b9aebeade3caec8cf778187d8da49c71c3a445cfff4d33fc4dc3619917a60"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/uk/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/uk/appinfo.json",
+    "mode": "0644",
+    "sha256": "5baf4a900eee1ae69ab461bba9a12f472fa70c5c011c3dd727b479fc865fd1be"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/uk/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/uk/appinfo.json",
+    "mode": "0644",
+    "sha256": "5baf4a900eee1ae69ab461bba9a12f472fa70c5c011c3dd727b479fc865fd1be"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/hu/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/hu/appinfo.json",
+    "mode": "0644",
+    "sha256": "fa5ef5406689b712ba6741d50382263da251a4c3371b64d240b0620dadae2e6f"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/hu/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/hu/appinfo.json",
+    "mode": "0644",
+    "sha256": "fa5ef5406689b712ba6741d50382263da251a4c3371b64d240b0620dadae2e6f"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/de/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/de/appinfo.json",
+    "mode": "0644",
+    "sha256": "bcda3b2d3f71d76135ee6f99f1007a3ce0fec2c172715a43cd36412d0e6443e1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/de/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/de/appinfo.json",
+    "mode": "0644",
+    "sha256": "bcda3b2d3f71d76135ee6f99f1007a3ce0fec2c172715a43cd36412d0e6443e1"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/fr/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/fr/appinfo.json",
+    "mode": "0644",
+    "sha256": "f58f7719215dc574bab09ecc2195fea93eadc6c185c9ecddd1cd3fe43a00f0d0"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/fr/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/fr/appinfo.json",
+    "mode": "0644",
+    "sha256": "f58f7719215dc574bab09ecc2195fea93eadc6c185c9ecddd1cd3fe43a00f0d0"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/es/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/es/appinfo.json",
+    "mode": "0644",
+    "sha256": "bd30e89c01061a1a7ce50a3d84ba6709926a986d083bf175fe9286d01b93c022"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/es/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/es/appinfo.json",
+    "mode": "0644",
+    "sha256": "bd30e89c01061a1a7ce50a3d84ba6709926a986d083bf175fe9286d01b93c022"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/en/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/en/appinfo.json",
+    "mode": "0644",
+    "sha256": "3aee95122e2e1bccb98ced227adb7a4f5581769a77d0a6fa683afeda52c17feb"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/en/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/en/appinfo.json",
+    "mode": "0644",
+    "sha256": "3aee95122e2e1bccb98ced227adb7a4f5581769a77d0a6fa683afeda52c17feb"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/tr/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/resources/tr/appinfo.json",
+    "mode": "0644",
+    "sha256": "52ede0c6e53029112fa193626aa326fd2f8ef108d3de25728b26198052e3e991"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/app/resources/tr/appinfo.json",
+    "target": "/var/lib/webosbrew/kick-replay-player/v0.9.2/usr/palm/applications/com.jakubjirak/resources/tr/appinfo.json",
+    "mode": "0644",
+    "sha256": "52ede0c6e53029112fa193626aa326fd2f8ef108d3de25728b26198052e3e991"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/browser-server.js",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/browser-server.js",
+    "mode": "0644",
+    "sha256": "922f66596cee1f67d7ab98a5c7e62039940f16ac7c6a2e899d3159a1715c7b97"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/services.json",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/services.json",
+    "mode": "0644",
+    "sha256": "89f3328e042705cf50d3ba7704dd5944cde49b9704f07b40707666b5a56bf349"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/native-prepare.py",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/native-prepare.py",
+    "mode": "0644",
+    "sha256": "14f73e70a67301f0e721a90cc8959c196c88e49ff59f149e62354c806eaa7f42"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/package.json",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/package.json",
+    "mode": "0644",
+    "sha256": "298760aecb109c45fecee3f33988d718307b990ad39031f1fa0e3f0ef164d07e"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/service/native-mount-cleanup.py",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/native-mount-cleanup.py",
+    "mode": "0644",
+    "sha256": "1ef50da59658eeb5c31249ef738eaa578b026071c27ee26b2aaf11eaf8667190"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/native-player/icon.png",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak.player/icon.png",
+    "mode": "0644",
+    "sha256": "99670cf22d5145894d7a60636b3142374629ee5f22020631bbae5d62dc22e42f"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/native-player/libkickobserver.so",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak.player/libkickobserver.so",
+    "mode": "0555",
+    "sha256": "ce4eedb9262c31ae741540252827f7b1d881822bab4a76b7ad124cdd0e690b9f"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/native-player/largeIcon.png",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak.player/largeIcon.png",
+    "mode": "0644",
+    "sha256": "80428c0a08d72ce4eb605a46cc72394cdfa90cc31d8b70428043635aa505eb31"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/native-player/appinfo.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak.player/appinfo.json",
+    "mode": "0644",
+    "sha256": "8f3cc1e6ab40cf56cfa6bc123ef700c6c381c6e47da5f5374dbfa6e69e28ffdc"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/source/native-player/share/crow_config.json",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak.player/share/crow_config.json",
+    "mode": "0644",
+    "sha256": "a3ad802f15f30318aff108f15717c72a98058b3968f2f828c82a7d83cef0012d"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-app/runtime.js",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/runtime.js",
+    "mode": "0644",
+    "sha256": "2e0e51f8d83d485b269e415c1a14afc6333653426fc06fdbaaa17b84c04eda71"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-app/browse.js",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/browse.js",
+    "mode": "0644",
+    "sha256": "0872e6510bb47dedff398d2791bcd96ce997fef273cb474e8b8c9c15deaf84da"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-app/player.js",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/player.js",
+    "mode": "0644",
+    "sha256": "720f52309f266b8deb446c0234a6c48613762439e6a7494fbabee58aba72c8d4"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-app/i18n.js",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/i18n.js",
+    "mode": "0644",
+    "sha256": "334425dbd0b2270a21f5d876a023b9922d3cf1427fb75611fa7ea23b856d9ac0"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-app/app.js",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/app.js",
+    "mode": "0644",
+    "sha256": "45639152dde9f27cca1ce9f56b17fc564237fd772d64672431063f6ba5f80dc5"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-app/vendor/hls.light.min.js",
+    "target": "/media/developer/apps/usr/palm/applications/com.jakubjirak/vendor/hls.light.min.js",
+    "mode": "0644",
+    "sha256": "26bef08aa6c523e913627b0e60f41e288fb8c4f605f588429906ac31d13c6d02"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-service/browser-session.js",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/browser-session.js",
+    "mode": "0644",
+    "sha256": "469aece110ecc28c8a250cd0f24babff183e006a1a58509c3003c8ff80b0b244"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-service/native-input.js",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/native-input.js",
+    "mode": "0644",
+    "sha256": "adaea0234db3fa4bcbee387277b6a5b8c13ff808afe059d0f3e7d6ece7cececa"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-service/discovery.js",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/discovery.js",
+    "mode": "0644",
+    "sha256": "17452b9f25347a897edb7a665b30c95d2395c628cba36f8c02b0713fc5d4c81c"
+  },
+  {
+    "component": "kick",
+    "file": "components/kick/installed-service/index.js",
+    "target": "/media/developer/apps/usr/palm/services/com.jakubjirak.service/index.js",
+    "mode": "0644",
+    "sha256": "7095fb7647e026f9ace98c36b69c39714262b1b6ae2091e8d240ac4e1531b8e9"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/overlay/defaults.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/defaults.js",
+    "mode": "0644",
+    "sha256": "34e8d93c4fc09b936a763fc5aa291986ba470fb08b0c55c5bca79fb54e2309bc"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/service/weather-provider.py",
+    "target": "/var/lib/webosbrew/hearth-boot-audio/weather-provider.py",
+    "mode": "0600",
+    "sha256": "c469e3165e8da873ae61d70955cfe3a8f15436811919e509e0dc2c4e03f10931"
+  },
+  {
+    "component": "hearth",
+    "file": "components/hearth/service/weather-ca.crt",
+    "target": "/var/lib/webosbrew/hearth-boot-audio/weather-ca.crt",
+    "mode": "0600",
+    "sha256": "1794c1d4f7055b7d02c2170337b61b48a2ef6c90d77e95444fd2596f4cac609f"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/root/providers/index.js",
+    "target": "/var/lib/webosbrew/tv-vpn/providers/index.js",
+    "mode": "0600",
+    "sha256": "5d15214a42829b04bf1c0808d35bd7005484d6f4fc3c42066c33489473a1844a"
+  },
+  {
+    "component": "connection",
+    "file": "components/connection/root/providers/tailscale.js",
+    "target": "/var/lib/webosbrew/tv-vpn/providers/tailscale.js",
+    "mode": "0600",
+    "sha256": "b2626be8524e1a7f0a8cfbbee8550fb6f866bdc00d17e4f056de3e49875b01b5"
+  },
+  {
+    "component": "system",
+    "file": "components/system/hooks/29-local-debug-only",
+    "target": "/var/lib/webosbrew/init.d/29-local-debug-only",
+    "mode": "0700",
+    "sha256": "48b9df3de0cbeafc846c9164f0bc4d1183192a32e2610aa9543088a338eca610"
+  }
+]
