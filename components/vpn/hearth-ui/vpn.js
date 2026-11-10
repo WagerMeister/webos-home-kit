@@ -2,7 +2,7 @@
 (function(root,doc){
   'use strict';
   var COMMANDS={providers:'/usr/bin/node /var/lib/webosbrew/tv-vpn/control.js providers',select:'/usr/bin/node /var/lib/webosbrew/tv-vpn/control.js select',status:'/usr/bin/node /var/lib/webosbrew/tv-vpn/control.js status',on:'/usr/bin/node /var/lib/webosbrew/tv-vpn/control.js on',off:'/usr/bin/node /var/lib/webosbrew/tv-vpn/control.js off',login:'/usr/bin/node /var/lib/webosbrew/tv-vpn/control.js login'};
-  var words={starting:'Проверка статуса…',on:'Включён',off:'Выключен','off-login':'Выключен · нужен вход',login:'Требуется вход',approval:'Нужно одобрить устройство',connecting:'Подключение…',disconnecting:'Выключается…','exit-offline':'Сервер недоступен','endpoint-offline':'Сервер недоступен',setup:'Требуется настройка',failed:'Не подключён · сеть восстановлена',error:'Нет соединения'};
+  var words={starting:'Проверка статуса…',on:'Включён',off:'Выключен','off-login':'Выключен · нужен вход',login:'Требуется вход',approval:'Нужно одобрить устройство',connecting:'VPN подключается…',disconnecting:'Выключается…','exit-offline':'Сервер недоступен','endpoint-offline':'Сервер недоступен',setup:'Требуется настройка',failed:'Не подключён · сеть восстановлена',error:'Нет соединения'};
   var engineModal=null,engineButtons=[],engineNote=null,engineList=null,engineFocus=null;
   var card=null,home=null,modal=null,qr=null,note=null,openButton=null,laterButton=null,offButton=null;
   var status={state:'starting',enabled:false},timer=null,request=null,pendingAction='',generation=0,focused=false,armed=false,savedTile=null,authURL=null,modalOpen=false,lastIssued=0,authPromptWanted=false;
@@ -22,10 +22,10 @@
   function render(value){
     status=value||{state:'error',enabled:false};
     card.setAttribute('data-state',status.state);card.setAttribute('aria-checked',status.enabled===true?'true':'false');
-    card.setAttribute('aria-label','Подключение. '+words[status.state]+'. OK — переключить; вниз — приложения.');
-    card.querySelector('.hearth-connection-status').textContent=words[status.state];
+    card.setAttribute('aria-label','VPN. '+words[status.state]+'. OK — переключить; вниз — приложения.');
+    card.querySelector('.hearth-vpn-status').textContent=words[status.state];
     if(modalOpen){
-      note.textContent=status.state==='login'||status.state==='off-login'?'Завершите вход в сервис подключения.':words[status.state];
+      note.textContent=status.state==='login'||status.state==='off-login'?'Завершите вход в VPN.':words[status.state];
       if(status.state==='on'){closeModal();return;}
     }
   }
@@ -35,11 +35,11 @@
     call('status',function(value){render(value);if(value&&value.state==='login'&&authPromptWanted&&supportsLogin(value)&&!modalOpen)showLogin();else if(modalOpen&&value&&value.loginReady&&!authURL)fetchLogin();else schedule(modalOpen?3000:5000);});
   }
   function restoreFocus(){
-    focused=false;armed=false;doc.documentElement.classList.remove('hearth-connection-focused');card.blur();
+    focused=false;armed=false;doc.documentElement.classList.remove('hearth-vpn-focused');card.blur();
     if(savedTile&&doc.documentElement.contains(savedTile)){try{savedTile.focus();}catch(error){}}savedTile=null;
   }
-  function focusCard(){savedTile=doc.querySelector('#root > .screen .tile--focused');focused=true;doc.documentElement.classList.add('hearth-connection-focused');card.focus();}
-  function closeModal(){authPromptWanted=false;if(!modalOpen)return;modalOpen=false;modal.hidden=true;authURL=null;qr.textContent='';if(showing()){focused=true;doc.documentElement.classList.add('hearth-connection-focused');card.focus();}schedule(100);}
+  function focusCard(){savedTile=doc.querySelector('#root > .screen .tile--focused');focused=true;doc.documentElement.classList.add('hearth-vpn-focused');card.focus();}
+  function closeModal(){authPromptWanted=false;if(!modalOpen)return;modalOpen=false;modal.hidden=true;authURL=null;qr.textContent='';if(showing()){focused=true;doc.documentElement.classList.add('hearth-vpn-focused');card.focus();}schedule(100);}
   function supportsLogin(value){return value&&value.capabilities?value.capabilities.browserLogin===true:!!(value&&typeof value.loginReady==='boolean');}
   function safeLoginURL(value){return typeof value==='string'&&value.length<512&&/^https:\/\/[A-Za-z0-9.-]+(?::443)?\/[A-Za-z0-9._~!$&()*+,;=:%?@/#-]*$/.test(value);}
   function drawQR(url){
@@ -69,7 +69,7 @@
   function listEngines(value){
     if(!engineModal)return;
     engineList.textContent='';engineButtons=[];
-    engineNote.textContent=!value?'Не удалось получить состояние. Закройте меню и повторите.':value.canSelect?'Выберите установленный движок.':'Перед сменой движка отключите подключение и дождитесь восстановления сети.';
+    engineNote.textContent=!value?'Не удалось получить состояние. Закройте меню и повторите.':value.canSelect?'Выберите установленный движок.':'Перед сменой движка выключите VPN и дождитесь восстановления сети.';
     (value&&value.providers||[]).forEach(function(item){
       if(!/^[a-z][a-z0-9-]{0,31}$/.test(item.id))return;
       var button=element('button','',item.label+(item.selected?' · выбран':''));button.type='button';button.disabled=!value.canSelect;
@@ -85,13 +85,13 @@
   function openEngines(){
     if(engineModal)return;
     engineFocus=doc.activeElement;root.clearTimeout(timer);cancel();
-    engineModal=element('div','hearth-connection-modal');engineModal.setAttribute('role','dialog');engineModal.setAttribute('aria-modal','true');engineModal.setAttribute('aria-label','Подключение — движок');
-    var dialog=element('section','hearth-connection-dialog');dialog.appendChild(element('h1','','Подключение — движок'));
-    engineNote=element('p','hearth-connection-modal-status','Получение состояния…');dialog.appendChild(engineNote);
-    engineList=element('div','hearth-connection-engines');dialog.appendChild(engineList);engineModal.appendChild(dialog);doc.body.appendChild(engineModal);
+    engineModal=element('div','hearth-vpn-modal');engineModal.setAttribute('role','dialog');engineModal.setAttribute('aria-modal','true');engineModal.setAttribute('aria-label','VPN — движок');
+    var dialog=element('section','hearth-vpn-dialog');dialog.appendChild(element('h1','','VPN — движок'));
+    engineNote=element('p','hearth-vpn-modal-status','Получение состояния…');dialog.appendChild(engineNote);
+    engineList=element('div','hearth-vpn-engines');dialog.appendChild(engineList);engineModal.appendChild(dialog);doc.body.appendChild(engineModal);
     call('providers',listEngines);
   }
-  root.__hearthConnectionSettings=openEngines;
+  root.__hearthVPNSettings=openEngines;
   function key(event){
     if(engineModal){
       var code=event.keyCode;
@@ -137,16 +137,16 @@
   }
   function attach(){
     home=doc.querySelector('#root > .screen');if(!home)return false;
-    card=element('button','hearth-connection-card');card.id='hearth-connection';card.type='button';card.setAttribute('role','switch');card.setAttribute('aria-checked','false');
-    var copy=element('span','hearth-connection-copy');copy.appendChild(element('span','hearth-connection-title','Подключение'));copy.appendChild(element('span','hearth-connection-status',words.starting));card.appendChild(copy);
-    var track=element('span','hearth-connection-track');track.setAttribute('aria-hidden','true');track.appendChild(element('span','hearth-connection-thumb'));card.appendChild(track);doc.body.appendChild(card);
-    card.onclick=function(event){event.stopPropagation();if(!focused){savedTile=doc.querySelector('.tile--focused');focused=true;doc.documentElement.classList.add('hearth-connection-focused');}var wanted=typeof status.wanted==='boolean'?status.wanted:status.enabled;action(wanted?'off':'on');};
-    modal=element('div','hearth-connection-modal');modal.id='hearth-connection-login';modal.hidden=true;modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');modal.setAttribute('aria-labelledby','hearth-connection-heading');
-    var dialog=element('section','hearth-connection-dialog'),title=element('h1','','Вход в сервис подключения');title.id='hearth-connection-heading';dialog.appendChild(title);
-    var login=element('div','hearth-connection-login');qr=element('div','hearth-connection-qr');login.appendChild(qr);
-    var instructions=element('div','hearth-connection-instructions','Отсканируйте QR-код телефоном и завершите вход в выбранный сервис.');instructions.appendChild(element('small','','После входа телевизор подключится к выходному узлу, указанному в локальной конфигурации. Можно также открыть вход в браузере телевизора.'));login.appendChild(instructions);dialog.appendChild(login);
-    note=element('p','hearth-connection-modal-status','');note.setAttribute('role','status');dialog.appendChild(note);
-    var buttons=element('div','hearth-connection-actions');openButton=element('button','','Открыть на телевизоре');laterButton=element('button','','Позже');offButton=element('button','','Отключить');[openButton,laterButton,offButton].forEach(function(b){b.type='button';buttons.appendChild(b);});dialog.appendChild(buttons);modal.appendChild(dialog);doc.body.appendChild(modal);
+    card=element('button','hearth-vpn-card');card.id='hearth-vpn';card.type='button';card.setAttribute('role','switch');card.setAttribute('aria-checked','false');
+    var copy=element('span','hearth-vpn-copy');copy.appendChild(element('span','hearth-vpn-title','VPN'));copy.appendChild(element('span','hearth-vpn-status',words.starting));card.appendChild(copy);
+    var track=element('span','hearth-vpn-track');track.setAttribute('aria-hidden','true');track.appendChild(element('span','hearth-vpn-thumb'));card.appendChild(track);doc.body.appendChild(card);
+    card.onclick=function(event){event.stopPropagation();if(!focused){savedTile=doc.querySelector('.tile--focused');focused=true;doc.documentElement.classList.add('hearth-vpn-focused');}var wanted=typeof status.wanted==='boolean'?status.wanted:status.enabled;action(wanted?'off':'on');};
+    modal=element('div','hearth-vpn-modal');modal.id='hearth-vpn-login';modal.hidden=true;modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');modal.setAttribute('aria-labelledby','hearth-vpn-heading');
+    var dialog=element('section','hearth-vpn-dialog'),title=element('h1','','Вход в VPN');title.id='hearth-vpn-heading';dialog.appendChild(title);
+    var login=element('div','hearth-vpn-login');qr=element('div','hearth-vpn-qr');login.appendChild(qr);
+    var instructions=element('div','hearth-vpn-instructions','Отсканируйте QR-код телефоном и завершите вход в выбранный сервис.');instructions.appendChild(element('small','','После входа телевизор подключится к выходному узлу, указанному в локальной конфигурации. Можно также открыть вход в браузере телевизора.'));login.appendChild(instructions);dialog.appendChild(login);
+    note=element('p','hearth-vpn-modal-status','');note.setAttribute('role','status');dialog.appendChild(note);
+    var buttons=element('div','hearth-vpn-actions');openButton=element('button','','Открыть на телевизоре');laterButton=element('button','','Позже');offButton=element('button','','Отключить');[openButton,laterButton,offButton].forEach(function(b){b.type='button';buttons.appendChild(b);});dialog.appendChild(buttons);modal.appendChild(dialog);doc.body.appendChild(modal);
     laterButton.onclick=closeModal;offButton.onclick=function(){closeModal();action('off');};
     openButton.onclick=function(){if(!authURL)return;var bridge=new root.PalmServiceBridge();bridge.onservicecallback=function(){try{bridge.cancel();}catch(error){}};bridge.call('luna://com.webos.applicationManager/launch',JSON.stringify({id:'com.webos.app.browser',params:{target:authURL}}));};
     root.addEventListener('keydown',key,true);root.addEventListener('keyup',key,true);

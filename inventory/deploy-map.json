@@ -60,14 +60,14 @@
     "file": "components/hearth/overlay/assets/app.js",
     "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/assets/app.js",
     "mode": "0644",
-    "sha256": "af81bcee45034616bcc246c8e7febe2a7f033ea2593dcb6a0108215dd1afb5c6"
+    "sha256": "459938d568cdda0bd4124dec3bb3b6762f612cdd350b546d6e85cc1c791e2682"
   },
   {
     "component": "hearth",
     "file": "components/hearth/overlay/assets/app.legacy.js",
     "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/assets/app.legacy.js",
     "mode": "0644",
-    "sha256": "3c00bad7338277bd80b947fca530394f61f87e66504eacd03513b0475e63de61"
+    "sha256": "a41d62e3a37a08d91a6b8ff900879dcfafd7846f082a66f2ef36b90993f7d97d"
   },
   {
     "component": "hearth",
@@ -224,25 +224,25 @@
     "sha256": "5bfe4127cb91b7436295135d491e2d8abeccacbc8c4d450fb30771183b1e24d2"
   },
   {
-    "component": "connection",
-    "file": "components/connection/hearth-ui/qrcode.js",
-    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-connection/qrcode.js",
+    "component": "vpn",
+    "file": "components/vpn/hearth-ui/qrcode.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-vpn/qrcode.js",
     "mode": "0644",
     "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
   },
   {
-    "component": "connection",
-    "file": "components/connection/hearth-ui/connection.css",
-    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-connection/connection.css",
+    "component": "vpn",
+    "file": "components/vpn/hearth-ui/vpn.css",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-vpn/vpn.css",
     "mode": "0644",
-    "sha256": "d12dd08479f55963cda993d1d1b5276ff668ffdbf0a573b5dfe12b736db2ed71"
+    "sha256": "4f1538454b69b6f76b4fe1c0accca42d50adf8661898bd55075dca8fe380dacb"
   },
   {
-    "component": "connection",
-    "file": "components/connection/hearth-ui/connection.js",
-    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-connection/connection.js",
+    "component": "vpn",
+    "file": "components/vpn/hearth-ui/vpn.js",
+    "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/custom-vpn/vpn.js",
     "mode": "0644",
-    "sha256": "c2487c130a6a3c0e804377409d78bb1e00259ef0a9764ee35bd9cf8ba8290385"
+    "sha256": "daeeb9084e515bdfbadaf67b117f9c5d26f95f861c022a1238c3c9013bee3568"
   },
   {
     "component": "hearth",
@@ -263,7 +263,7 @@
     "file": "components/hearth/overlay/index.html",
     "target": "/media/developer/apps/usr/palm/applications/tld.my.customlauncher/index.html",
     "mode": "0644",
-    "sha256": "f84c68238a5a28e5a847bb15f943bdde456bfd63cc099656f9c641847459fe71"
+    "sha256": "e1a4b9cfb094c627fb992229205e312c96eb7072d476f88929dd89054a2e6e8a"
   },
   {
     "component": "hearth",
@@ -356,7 +356,7 @@
     "sha256": "d4fcd2a4399b51043f2ca33b2d33b648a25330e3bff270832f5f0911601abb24"
   },
   {
-    "component": "connection",
+    "component": "vpn",
     "type": "symlink",
     "target": "/var/lib/webosbrew/init.d/48-tv-vpn",
     "linkTarget": "/var/lib/webosbrew/tv-vpn/48-tv-vpn"
@@ -445,29 +445,29 @@
     "sha256": "9b64004b0377a30b555b48a16c5ef836c99aa3e8254d0148091ab10e8326413a"
   },
   {
-    "component": "connection",
-    "file": "components/connection/root/48-connection",
+    "component": "vpn",
+    "file": "components/vpn/root/48-vpn",
     "target": "/var/lib/webosbrew/tv-vpn/48-tv-vpn",
     "mode": "0700",
     "sha256": "e6050037b0ff9155347e35f9de2be9a6ad0927867fa70cc60c8efbe9e90328b1"
   },
   {
-    "component": "connection",
-    "file": "components/connection/root/control.js",
+    "component": "vpn",
+    "file": "components/vpn/root/control.js",
     "target": "/var/lib/webosbrew/tv-vpn/control.js",
     "mode": "0600",
     "sha256": "064acfcf939a6596ccb2288ae3dd8f70811495d6a06513f18969a21b149d2899"
   },
   {
-    "component": "connection",
-    "file": "components/connection/root/manager.js",
+    "component": "vpn",
+    "file": "components/vpn/root/manager.js",
     "target": "/var/lib/webosbrew/tv-vpn/manager.js",
     "mode": "0600",
     "sha256": "3343ea1d0dc72aad8d262f42488f7b4e9e36d138b2cd539aafd40921d476ed4b"
   },
   {
-    "component": "connection",
-    "file": "components/connection/root/routing-compat.py",
+    "component": "vpn",
+    "file": "components/vpn/root/routing-compat.py",
     "target": "/var/lib/webosbrew/tv-vpn/routing-compat.py",
     "mode": "0600",
     "sha256": "a173e1a31ae6ae2bea3e82f947d9b23924a9736c87d792ad430eac79954d40ed"
@@ -1061,15 +1061,15 @@
     "sha256": "1794c1d4f7055b7d02c2170337b61b48a2ef6c90d77e95444fd2596f4cac609f"
   },
   {
-    "component": "connection",
-    "file": "components/connection/root/providers/index.js",
+    "component": "vpn",
+    "file": "components/vpn/root/providers/index.js",
     "target": "/var/lib/webosbrew/tv-vpn/providers/index.js",
     "mode": "0600",
     "sha256": "5d15214a42829b04bf1c0808d35bd7005484d6f4fc3c42066c33489473a1844a"
   },
   {
-    "component": "connection",
-    "file": "components/connection/root/providers/tailscale.js",
+    "component": "vpn",
+    "file": "components/vpn/root/providers/tailscale.js",
     "target": "/var/lib/webosbrew/tv-vpn/providers/tailscale.js",
     "mode": "0600",
     "sha256": "b2626be8524e1a7f0a8cfbbee8550fb6f866bdc00d17e4f056de3e49875b01b5"

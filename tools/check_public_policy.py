@@ -27,7 +27,7 @@ def main():
             errors.append('forbidden tracked path: ' + name)
         if file.is_symlink():
             errors.append('unexpected repository symlink: ' + name)
-    config = json.loads((ROOT / 'components/connection/config.example.json').read_text())
+    config = json.loads((ROOT / 'components/vpn/config.example.json').read_text())
     config = config.get('providerConfig', config)
     if (config.get('exitNodeIP'), config.get('exitNodeName'), config.get('hostname')) != (
             '100.64.0.10', 'example-exit-node', 'lg-webos-tv'):

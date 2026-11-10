@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
-const source = fs.readFileSync(path.join(__dirname, '../hearth-ui/connection.js'), 'utf8');
+const source = fs.readFileSync(path.join(__dirname, '../hearth-ui/vpn.js'), 'utf8');
 
 function mount(initial) {
   const calls = [], timers = [], nodes = [], listeners = {};
@@ -57,9 +57,9 @@ function mount(initial) {
   };
   vm.runInNewContext(source, {window, document});
   const poll = timers.find(timer => timer.active && timer.delay === 100); assert(poll); poll.fn();
-  const card = nodes.find(node => node.id === 'hearth-connection'); assert(card);
+  const card = nodes.find(node => node.id === 'hearth-vpn'); assert(card);
   return {calls, card, window, document,
-    menu() { return nodes.find(node => node.className === 'hearth-connection-engines' && document.body.contains(node)); },
+    menu() { return nodes.find(node => node.className === 'hearth-vpn-engines' && document.body.contains(node)); },
     event(type, keyCode) { const event = {type, keyCode, preventDefault() { this.prevented = true; }, stopImmediatePropagation() { this.stopped = true; }}; for (const fn of listeners[type] || []) fn(event); return event; },
     click() { card.onclick({stopPropagation() {}}); }};
 }
@@ -80,7 +80,7 @@ console.log('PASS: OK cancels pending connections, rendered truth stays separate
 
 const selector = mount({state: 'off', wanted: false, enabled: false, authenticated: true,
   canSelect: true, providers: [{id: 'tailscale', label: 'Tailscale', selected: true}]});
-selector.window.__hearthConnectionSettings();
+selector.window.__hearthVPNSettings();
 assert.equal(selector.document.activeElement.textContent, 'Tailscale · выбран');
 assert(selector.event('keydown', 40).stopped, 'Dialog must isolate arrows from the launcher');
 assert.equal(selector.document.activeElement.textContent, 'Обновить');
@@ -88,7 +88,7 @@ selector.event('keydown', 13); selector.event('keyup', 13);
 assert.equal(selector.calls.at(-1), 'providers', 'OK activates the focused dialog action');
 selector.event('keydown', 461);
 assert(!selector.menu(), 'Back dismisses settings without closing Hearth');
-selector.window.__hearthConnectionSettings();
+selector.window.__hearthVPNSettings();
 selector.event('webOSRelaunch');
 assert(!selector.menu(), 'Home/relaunch must not leave a stale modal on top');
 console.log('PASS: settings discovery, remote arrow/OK isolation, Back and Home dismissal');

@@ -39,8 +39,8 @@ login*.svg
 /packages/*.tgz
 /components/kick/source/native-player/chrome
 /components/vk-speed/native/chrome
-/components/connection/root/state/
-/components/connection/root/logs/
+/components/vpn/root/state/
+/components/vpn/root/logs/
 /components/vk-speed/runtime/state/
 .ssh/
 .gnupg/

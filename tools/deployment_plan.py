@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 p = argparse.ArgumentParser(description=__doc__)
-p.add_argument('--component', required=True, choices=['hearth', 'kick', 'vk-speed', 'connection', 'system', 'all'])
+p.add_argument('--component', required=True, choices=['hearth', 'kick', 'vk-speed', 'vpn', 'system', 'all'])
 args = p.parse_args()
 entries = json.loads((ROOT / 'inventory/deploy-map.json').read_text())
 for entry in entries:

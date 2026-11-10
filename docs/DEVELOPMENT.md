@@ -7,13 +7,13 @@ python3 tools/verify_project.py
 python3 tools/check_no_credentials.py
 python3 tools/check_public_policy.py
 node components/hearth/test-config.cjs
-node components/connection/tests/test-controller.cjs
-node components/connection/tests/test-selection.cjs
-node components/connection/tests/test-tailscale.cjs
-node components/connection/tests/test-ui.cjs
+node components/vpn/tests/test-controller.cjs
+node components/vpn/tests/test-selection.cjs
+node components/vpn/tests/test-tailscale.cjs
+node components/vpn/tests/test-ui.cjs
 ```
 
-Проверка целостности сверяет карту размещения и SHA256 ресурсов. Проверка публикации работает по Git index: перед ней добавьте предполагаемые изменения в index. Отчёты локальных запусков и данные устройства держите вне дерева исходников.
+Проверка целостности сверяет карту размещения и SHA256 ресурсов. Проверка состава исходников работает по Git index. Результаты проверок сохраняйте вне дерева исходников.
 
 ## Сборка Kick
 
@@ -35,9 +35,9 @@ npm run package
 
 У VK и Kick отдельные app ID, временные каталоги и input bridges. Не объединяйте их session state или lifecycle. Изменение startup/audio hooks проверяйте отдельно от медиаплееров; потеря связи с UI не должна блокировать штатные кнопки.
 
-## Движки подключения
+## Движки VPN
 
-UI, control.js и manager.js составляют общий управляющий контур. Транспортная реализация находится в `components/connection/root/providers`. Новый движок подключается через [контракт адаптера](../components/connection/ADAPTERS.md); он не должен менять Home, audio guards или код медиаплееров. Реестр, локальные профили и меню выбора движка — точки выбора реализации. `tools/device_sync.py` связывает исходники с управляемыми файлами устройства по SHA256 карты; его compare-режим не меняет устройство.
+UI, control.js и manager.js составляют общий управляющий контур. Транспортная реализация находится в `components/vpn/root/providers`. Новый движок подключается через [контракт адаптера](../components/vpn/ADAPTERS.md); он не должен менять Home, audio guards или код медиаплееров. Реестр, локальные профили и меню выбора движка — точки выбора реализации. `tools/device_sync.py` связывает исходники с управляемыми файлами устройства по SHA256 карты; его compare-режим не меняет устройство.
 
 ## Источники и целостность
 
@@ -47,4 +47,4 @@ UI, control.js и manager.js составляют общий управляющ�
 python3 tools/update_manifest.py
 ```
 
-В runtime нельзя переносить рабочий config, SSH-ключи, cookies, signed media URLs, состояние клиента подключения и browser profiles из исходников. Локальные файлы конфигурации и сборки исключаются через `.gitignore`. [Лицензии и атрибуция](../THIRD_PARTY.md) сохраняются при обновлении сторонних файлов.
+В runtime нельзя переносить рабочий config, SSH-ключи, cookies, signed media URLs, состояние VPN-клиента и browser profiles из исходников. Локальные файлы конфигурации и сборки исключаются через `.gitignore`. [Лицензии и атрибуция](../THIRD_PARTY.md) сохраняются при обновлении сторонних файлов.

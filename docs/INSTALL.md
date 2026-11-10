@@ -18,9 +18,9 @@ python3 tools/deployment_plan.py --component hearth
 
 ## Hearth
 
-Установите базовый Hearth, затем разместите overlay по карте. Файлы `components/connection/hearth-ui` устанавливаются в `custom-connection` внутри Hearth. Forecast helper и CA bundle из `components/hearth/service` размещаются рядом с audio runtime; cache создаётся отдельно и остаётся локальным.
+Установите базовый Hearth, затем разместите overlay по карте. Файлы `components/vpn/hearth-ui` устанавливаются в `custom-vpn` внутри Hearth. Forecast helper и CA bundle из `components/hearth/service` размещаются рядом с audio runtime; cache создаётся отдельно и остаётся локальным.
 
-Настройки главного экрана описаны в [CONFIGURATION.md](CONFIGURATION.md). Новый профиль получает нейтральные значения без города; существующие предпочтения автоматически не перезаписываются.
+Настройки главного экрана описаны в [CONFIGURATION.md](CONFIGURATION.md). При первом запуске выберите город для погоды; существующие предпочтения при обновлении сохраняются.
 
 ## Kick
 
@@ -34,9 +34,9 @@ python3 tools/deployment_plan.py --component hearth
 
 Зарегистрируйте пакет `launcher`+`service` и отдельный пакет `native` с локальным LG executable. Разместите `runtime` по карте. Сначала запустите observer вручную и проверьте переход VK→Home→VK×2; затем подключите его hook. Снимки потока создаются в root-only временном каталоге.
 
-## Подключение
+## VPN
 
-1. Выберите поддерживаемый адаптер по [ADAPTERS.md](../components/connection/ADAPTERS.md) и подготовьте его бинарники/профиль.
+1. Выберите поддерживаемый адаптер по [ADAPTERS.md](../components/vpn/ADAPTERS.md) и подготовьте его бинарники/профиль.
 2. Создайте root-owned каталог runtime с подкаталогами `bin`, `state`, `logs`, все —0700. Целевой каталог указан в карте; существующий путь сохраняется для совместимости с установленным состоянием.
 3. Установите `root` целиком, включая `providers`: один manager.js без адаптера работать не будет. Примените права карты.
 4. Создайте локальный config.json из примера: укажите `provider` и его `providerConfig`, оставьте enabled=false. Config, клиентское состояние и control socket —0600.
